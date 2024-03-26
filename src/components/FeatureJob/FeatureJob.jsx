@@ -18,7 +18,7 @@ const FeatureJob = () => {
             <h2 className='text-5xl text-center'>Feature Jobs: {jobs.length}</h2>
             <p className='text-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed illo dolores natus, aspernatur incidunt vero?</p>
             </div>
-            <div>
+            <div className="grid md:grid-cols-3 gap-4">
                 {
                     jobs.map(job => <Job job={job} key={job.id}></Job>)
                 }
