@@ -28,16 +28,18 @@ const JobDetails = () => {
                     <p><b>Educational Requirements: </b>{job.educational_requirements}</p>
                     <p><b>Experiences: </b>{job.experiences}</p>
                 </div>
-                <div className="border ">
-                    <h2 className="text-2xl">Job Details</h2>
-                    <p><b>Salary: </b>{job.salary}</p>
-                    <p><b>Job title: </b>{job.job_title}</p>
-                    <p>Contact Information</p>
-                    <p><b>Phone: </b>{job.phone}</p>
-                    <p><b>Email: </b>{job.email}</p>
-                    <p><b>Address: </b>{job.address}</p>
+                <div>
+                    <div className="border p-8 bg-[#7E90FE] bg-opacity-20 rounded-lg">
+                    <h2 className="text-xl text-[#1A1919] font-extrabold pb-6 border-b border-gray-400">Job Details</h2>
+                    <p className="text-xl text-[#474747] mt-6 mb-4"><b>Salary: </b>{job.salary}</p>
+                    <p className="text-xl text-[#474747]"><b>Job title: </b>{job.job_title}</p>
+                    <p  className="text-xl text-[#1A1919] font-extrabold mt-8 mb-6 pb-6  border-b border-gray-400">Contact Information</p>
+                    <p className="text-xl text-[#474747]"><b>Phone: </b>{job.phone}</p>
+                    <p className="text-xl text-[#474747] my-4"><b>Email: </b>{job.email}</p>
+                    <p className="text-xl text-[#474747]"><b>Address: </b>{job.address}</p>
+                    </div>
 
-                    <button onClick={()=> handleApplyJob()} className="btn btn-primary w-full">Apply</button>
+                    <button onClick={()=> handleApplyJob()} className="btn btn-primary w-full mt-6">Apply</button>
                 </div>
             </div>
             <ToastContainer />
